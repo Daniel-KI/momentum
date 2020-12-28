@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }  
+body{
+    font-family: 'Dosis', sans-serif;
+    height: 100vh;
+    text-align: center;
+    background: rgb(109, 24, 24);
+    color: #ffffff;
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.weather{
+    position: absolute;
+    font-size: 1.5rem;
+}
+.info-block{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.time{
+    font-size: 8rem;
+}
+.greet{
+    margin-bottom: 1.5rem;
+}
+.greeting, .username{
+    font-size: 3rem;
+}
+.focus h2, .focus .focus-text{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.focus-info{
+    opacity: 0.7;
+}
+.focus-text{
+    max-width: 100vw;
+    border: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+.quote-text{
+    font-family: 'Satisfy',sans-serif;
+    font-size: 1.5rem;
+}
+@media (max-width: 700px) {
+    .time {
+      font-size: 5rem;
+    }
+    .greeting, .username{
+        font-size: 1.5rem;
+    }
+  }
